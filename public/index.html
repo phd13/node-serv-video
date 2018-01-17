@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style rel="stylesheet" href=""></style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="link" placeholder="Put link to your video here...">
-    <button id="send-btn">Отправить</button>
-    <video src="#" controls id="video"></video>
-    <script src="main.js"></script>
+<div class="container">
+    <div class="controls">
+        <input class="input" type="url" id="link" placeholder="Put link to your video here...">
+        <button id="send-btn" class="button">Отправить</button>
+    </div>
+    <video src="#" controls id="video" class="video"></video>
+    <h4>Example links:</h4>
+    <p>http://cdn02.nativeroll.tv/nr/3/videoplayback_1024.mp4</p>
+    <p>http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4</p>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

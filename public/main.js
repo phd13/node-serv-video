@@ -3,7 +3,7 @@ const input = document.getElementById('link');
 const sendBtn = document.getElementById('send-btn');
 const video = document.getElementById('video');
 
-let link = 'http://cdn02.nativeroll.tv/nr/3/videoplayback_1024.mp4';
+let link = ''; // http://cdn02.nativeroll.tv/nr/3/videoplayback_1024.mp4';
 input.onchange = function(event) {
 	let { value } = event.target;
 	link = value;
