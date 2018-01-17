@@ -1,0 +1,19 @@
+{
+  "name": "serv-video",
+  "version": "1.0.0",
+  "description": "pet project, a simple server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philipp Dubrivny",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-static": "^1.2.5",
+    "nodemon": "^1.14.11",
+    "request": "^2.83.0"
+  }
+}
