@@ -4,6 +4,7 @@
 }
 
 .video {
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -23,4 +24,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.form {
+    width: 100%;
 }

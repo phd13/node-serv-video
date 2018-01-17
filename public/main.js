@@ -1,15 +1,16 @@
 const api = 'http://localhost:8080/api';
 const input = document.getElementById('link');
-const sendBtn = document.getElementById('send-btn');
+const form = document.querySelector('form');
 const video = document.getElementById('video');
 
-let link = ''; // http://cdn02.nativeroll.tv/nr/3/videoplayback_1024.mp4';
+let link = '';
 input.onchange = function(event) {
 	let { value } = event.target;
 	link = value;
 };
 
-sendBtn.onclick = function() {
+form.onsubmit = function(e) {
+	e.preventDefault();
 	const request = new Request(`${api}/link`, {
 		method: 'POST',
 		headers: {
@@ -19,10 +20,19 @@ sendBtn.onclick = function() {
 	});
 
 	fetch(request)
-		.then(res => res.text())
-		.then(link => {
+		.then(res => {
+			if (res.status === 400) {
+				throw new Error(res.statusText);
+			} else {
+				return res.json();
+			}
+		})
+		.then(({ link, from }) => {
+			console.log(from);
 			video.src = link;
 			video.play();
 		})
-		.catch(err => console.log(err));
+		.catch(err => {
+			console.log(err.message);
+		});
 };
