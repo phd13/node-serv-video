@@ -1,31 +1,59 @@
+body {
+    background-color: #050505;
+    color: #E7E7E7;
+}
+
 .container {
+    border-radius: 10px;
     max-width: 992px;
-    margin: 0 auto;
+    height: 100vh;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #232323;
 }
 
 .video {
-    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
+video::-webkit-media-controls-play-button, video::-webkit-media-controls-fullscreen-button {
+    cursor: pointer;
+}
+
+video::-webkit-media-controls-panel {
+    background-color: #121212;
+    color: #E7E7E7;
+}
+
 .input {
-    width: 80%;
-    height: 20px;
+    width: 90%;
+    padding: 15px;
+    background-color: #121212;
+    color: #888888;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline-color: #303030;
+    border: none;
+    font-size: 14px;
 }
 
 .button {
-    width: 15%;
-    padding: 5px;
-    background-color: #e5e5e5;
-}
-
-.controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    outline-color: #303030;
+    font-size: 14px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background-color: #383838;
+    width: 10%;
+    color: #7a7a7a;
+    padding: 15px;
 }
 
 .form {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
