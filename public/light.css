@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: #050505;
-    color: #E7E7E7;
+    background-color: #FFFFFF;
+    color: #111111;
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
     height: 100vh;
     padding: 10px;
     margin: 10px auto;
-    background-color: #232323;
+    background-color: #e5e5e5;
 }
 
 .video {
@@ -26,31 +26,31 @@ video::-webkit-media-controls-play-button, video::-webkit-media-controls-fullscr
 }
 
 video::-webkit-media-controls-panel {
-    background-color: #121212;
-    color: #E7E7E7;
+    background-color: #CCCCCC;
+    color: #111111;
 }
 
 .input {
     width: 90%;
     padding: 15px;
-    background-color: #121212;
-    color: #888888;
+    background-color: #FFFFFF;
+    color: #111111;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    outline-color: #303030;
+    outline-color: #CCCCCC;
     border: none;
     font-size: 14px;
 }
 
 .button {
-    outline-color: #303030;
+    outline-color: #CCCCCC;
     font-size: 14px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: none;
-    background-color: #383838;
+    background-color: #CCCCCC;
     width: 10%;
-    color: #7a7a7a;
+    color:  #111111;
     padding: 15px;
     cursor: pointer;
 }
@@ -71,12 +71,18 @@ video::-webkit-media-controls-panel {
     height: 50px;
     top: 10px;
     right: 10px;
-    background-color: #232323;
+    background-color: #CCCCCC;
     border-radius: 50%;
     text-decoration: none;
-    color: #E7E7E7;
-    font-size: 18px;
+    color: #111111;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
+}
+
+.icon {
+    background: url('icon_light_theme.svg') no-repeat;
+    display: block;
+    width: 40px;
+    height: 40px;
 }
